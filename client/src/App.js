@@ -7,15 +7,12 @@ import Header from './components/common/Header';
 
 const App = () => (
   <BrowserRouter>
-
-
     <Header>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="*" component={Page404} />
       </Switch>
     </Header>
-
   </BrowserRouter>
 );
 

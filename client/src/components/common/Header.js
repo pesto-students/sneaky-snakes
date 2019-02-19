@@ -13,7 +13,6 @@ export default class Header extends Component {
     this.handleItemClick = this.handleItemClick.bind(this);
   }
 
-
   handleItemClick(e, { name }) {
     this.setState({ activeItem: name });
   }
@@ -21,9 +20,10 @@ export default class Header extends Component {
   render() {
     const { activeItem } = this.state;
     const { children } = this.props;
+    
     return (
       <React.Fragment>
-        <Menu style={{ marginBottom: '30' }} fixed="top">
+        <Menu fixed="top">
           <Menu.Item
             name="home"
             active={activeItem === 'home'}
