@@ -20,7 +20,7 @@ export default class Header extends Component {
   render() {
     const { activeItem } = this.state;
     const { children } = this.props;
-    
+
     return (
       <React.Fragment>
         <Menu fixed="top">
