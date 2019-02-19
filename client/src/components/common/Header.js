@@ -23,7 +23,7 @@ export default class Header extends Component {
 
     return (
       <React.Fragment>
-        <Menu fixed="top">
+        <Menu size="massive" fixed="top">
           <Menu.Item
             name="home"
             active={activeItem === 'home'}
